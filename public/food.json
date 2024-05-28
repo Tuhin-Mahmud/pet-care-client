@@ -1,0 +1,102 @@
+[
+    {
+        "name": "cat food petline delicate",
+        "image": "https://i.ibb.co/pj22t36/images-3.jpg",
+        "price": 19.45,
+        "notPrice": 23.66,
+        "shortDescription": "Petline offers a diverse range of cat food options to meet the nutritional needs and taste preferences of cats. Whether you have a kitten, adult cat, or senior cat, Petline provides a variety of formulations to support their health at every stage of life",
+        "rating": 4.5,
+        "customerReview": "Petline offers a diverse range of cat food options to meet the nutritional needs and taste preferences of cats. Whether you have a kitten, adult cat, or senior cat, Petline provides a variety of formulations to support their health at every stage of life,Petline offers a diverse range of cat food options to meet the nutritional needs and taste preferences of cats.",
+        "sku": "SKU123456",
+        "longDescription": "Petline offers a diverse range of cat food options to meet the nutritional needs and taste preferences of cats. Whether you have a kitten, adult cat, or senior cat, Petline provides a variety of formulations to support their health at every stage of life,Petline offers a diverse range of cat food options to meet the nutritional needs and taste preferences of cats. Whether you have a kitten, adult cat, or senior cat, Petline provides a variety of formulations to support their health at every stage of life",
+        "photos": [
+            {
+                "photo": "https://i.ibb.co/wwTq5py/images-2.jpg"
+            },
+            {
+                "photo": "https://i.ibb.co/GdJPBHC/images-1.jpg"
+            },
+            {
+                "photo": "https://i.ibb.co/P1hhtV1/download.jpg"
+            },
+            {
+                "photo": "https://i.ibb.co/P1hhtV1/download.jpg"
+            }
+        ]
+    },
+    {
+        "name": "jungle premium rabbit",
+        "image": "https://i.ibb.co/T1bJdQp/rabbit.jpg",
+        "price": 29.9,
+        "notPrice": 35.66,
+        "shortDescription": "Jungle Premium Rabbit food is typically made with high-quality ingredients such as Timothy hay, alfalfa, various grains, and vegetables. These ingredients are selected to provide rabbits with essential nutrients for overall health and well-being",
+        "rating": 4.8,
+        "customerReview": "Jungle Premium Rabbit food is typically made with high-quality ingredients such as Timothy hay, alfalfa, various grains, and vegetables.",
+        "sku": "SKU789012",
+        "longDescription": "Jungle Premium Rabbit food is typically made with high-quality ingredients such as Timothy hay, alfalfa, various grains, and vegetables. These ingredients are selected to provide rabbits with essential nutrients for overall health and well-being",
+        "photos": [
+            {
+                "photo": "https://i.ibb.co/7GFqbNj/download-1.jpg"
+            },
+            {
+                "photo": "https://i.ibb.co/mBkSrx8/download-2.jpg"
+            },
+            {
+                "photo": "https://i.ibb.co/X56228v/download-3.jpg"
+            },
+            {
+                "photo": "https://i.ibb.co/7GFqbNj/download-1.jpg"
+            }
+        ]
+    },
+    {
+        "name": "PEDIGREE Grilled Steak",
+        "image": "https://i.ibb.co/v11tvQ9/images.jpg",
+        "price": 38.14,
+        "notPrice": 42.6,
+        "shortDescription": "Pedigree Grilled Steak dog food offers a hearty and flavorful meal for your canine companion. This recipe features tender, grilled steak flavor that dogs find irresistible, providing a delicious dining experience.",
+        "rating": 4.2,
+        "customerReview": "Formulated with high-quality ingredients, including protein sources to support strong muscles, Pedigree Grilled Steak dog food provides essential nutrients to help your dog thrive. Additionally, it's typically enriched with vitamins and minerals to support overall health and well-being,",
+        "sku": "SKU345678",
+        "longDescription": " Formulated with high-quality ingredients, including protein sources to support strong muscles, Pedigree Grilled Steak dog food provides essential nutrients to help your dog thrive. Additionally, it's typically enriched with vitamins and minerals to support overall health and well-being, including a shiny coat and healthy skin. This tasty meal option from Pedigree aims to satisfy your dog's cravings while nourishing them with the nutrition they need to live a happy and healthy life",
+        "photos": [
+            {
+                "photo": "https://i.ibb.co/MPx2Dhh/dog.jpg"
+            },
+            {
+                "photo": "https://i.ibb.co/CBw57Gq/dog1.jpg"
+            },
+            {
+                "photo": "https://i.ibb.co/WKcPp7z/dog2.jpg"
+            },
+            {
+                "photo": "https://i.ibb.co/w716VBP/dog3.jpg"
+            }
+        ]
+    },
+    {
+        "name": "Mazuri nutriBlent",
+        "image": "https://i.ibb.co/wwPyg35/images.jpg",
+        "price": 45.99,
+        "notPrice": 57.6,
+        "shortDescription": " Pigeon feed typically contains a variety of grains such as corn, wheat, barley, millet, and sorghum. These grains provide carbohydrates for energy",
+        "rating": 4.9,
+        "customerReview": "Overall, pigeon food is designed to provide a balanced diet that meets the nutritional requirements of pigeons, whether they are kept as pets, for racing,",
+        "sku": "SKU901234",
+        "longDescription": "Overall, pigeon food is designed to provide a balanced diet that meets the nutritional requirements of pigeons, whether they are kept as pets, for racing, or for show purposes. It's essential to choose a high-quality pigeon food to ensure the health and well-being of your birds",
+        "photos": [
+            {
+                "photo": "https://i.ibb.co/xJrjRDX/images-1.jpg"
+            },
+            {
+                "photo": "https://i.ibb.co/xJrjRDX/images-1.jpg"
+            },
+            {
+                "photo": "https://i.ibb.co/CvpwMY1/images-2.jpg"
+            },
+            {
+                "photo": "https://i.ibb.co/qBkCncX/images-3.jpg"
+            }
+        ]
+    }
+]

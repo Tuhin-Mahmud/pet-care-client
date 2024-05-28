@@ -1,0 +1,22 @@
+[
+    {
+        "_id": "1",
+        "name": "cat",
+        "image": "https://i.ibb.co/wdCW1Np/animal-cat-pet-kitten.jpg"
+    },
+    {
+        "_id": "2",
+        "name": "rabbit",
+        "image": "https://i.ibb.co/KysRNcY/531754-white-rabbit-wallpaper.jpg"
+    },
+    {
+        "_id": "3",
+        "name": "dog",
+        "image": "https://i.ibb.co/Cb3YJ3B/dogs-jack-russell-terrier-dog-pet-hd-wallpaper-preview.jpg"
+    },
+    {
+        "_id": "4",
+        "name": "pigeon",
+        "image": "https://i.ibb.co/L9Rwww6/49-flying-pigeon-in-the-woods.jpg"
+    }
+]

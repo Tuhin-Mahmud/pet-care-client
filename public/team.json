@@ -1,0 +1,23 @@
+[
+    {
+        "name": "Mohsin Islam Mushfiq ",
+        "image": "https://i.ibb.co/pnc5RdX/mohshin.jpg",
+        "title": "team leader"
+    },
+    {
+        "name": "Sihabul Hasan",
+        "image": "https://i.ibb.co/5RgbhkM/shihabul.jpg",
+        "title": "Pet Trainer"
+    },
+    {
+        "name": "MD Habib",
+        "image": "https://i.ibb.co/Dk37mSS/habib.jpg",
+        "title": "pet designer"
+    },
+    {
+        "_id": "4",
+        "name": "A.R. Sakib ",
+        "image": "https://i.ibb.co/WP4TnZq/shakib.jpg",
+        "title": "pet doctor"
+    }
+]
