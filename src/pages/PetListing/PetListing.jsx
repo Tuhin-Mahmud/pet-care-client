@@ -1,20 +1,37 @@
 // import SearchField from "../../components/SearchField";
+import { useQuery } from '@tanstack/react-query';
 import petListingImg from '../../assets/images/category/cats/details.jpg'
+import Loading from '../../components/Loader/Loading';
 import CoverImg from '../../components/common/CoverImg';
 import CoverText from '../../components/common/CoverText';
-import PetListingCategory from "./PetListingCategory";
+
+import PetListingCatCart from './PetListingCatCart';
 import { useState } from "react";
+import useAxiosPublic from '../../hooks/useAxiosPublic';
 
 
 const PetListing = () => {
     const [search, setSearch] = useState('')
-
+    const axiosPublic = useAxiosPublic()
+    // const [pets, isLoading] = usePets(search)
+    const { data: pets = [], isLoading } = useQuery({
+        queryKey: ['petListing', search],
+        queryFn: async () => {
+            const res = await axiosPublic.get(`/api/v1/allPets-read?search=${search || ''}`)
+            return res.data;
+        }
+    })
 
     const handleSubmit = e => {
         e.preventDefault()
         const searchText = e.target.search.value;
         setSearch(searchText)
 
+    }
+
+
+    if (isLoading) {
+        return <Loading></Loading>
     }
 
     return (
@@ -37,8 +54,13 @@ const PetListing = () => {
 
                 </div>
                 {/* all pets */}
-                <div>
-                    <PetListingCategory search={search}></PetListingCategory>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+                    {
+                        pets?.map(pet => <PetListingCatCart
+                            key={pet._id}
+                            pet={pet}
+                        ></PetListingCatCart>)
+                    }
                 </div>
             </div>
         </div>

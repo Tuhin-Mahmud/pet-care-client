@@ -51,7 +51,7 @@ const router = createBrowserRouter([
             {
                 path: '/allPetsDetails/:id',
                 element: <AllPetDetails></AllPetDetails>,
-                loader: ({ params }) => fetch(`chttp://localhost:5000/api/v1/allPet-read/${params.id}`)
+                loader: ({ params }) => fetch(`http://localhost:5000/api/v1/allPet-read/${params.id}`)
             },
             {
                 path: '/petListing',

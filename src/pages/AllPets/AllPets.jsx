@@ -6,11 +6,12 @@ import SectionTitle from "../../components/SectionTitle/SectionTitle";
 
 const AllPets = () => {
     const [pets] = usePets()
+    console.log(pets);
     const { category: petCategory } = useParams()
     // console.log(pets);
 
     const allPetCategory = pets.filter(item => item.category === petCategory)
-
+    // console.log(allPetCategory);
 
     return (
         <div>

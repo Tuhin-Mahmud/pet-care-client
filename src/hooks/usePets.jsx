@@ -1,13 +1,13 @@
 import { useQuery } from "@tanstack/react-query";
 import useAxiosPublic from "./useAxiosPublic";
 
-const usePets = (search) => {
+const usePets = () => {
     const axiosPublic = useAxiosPublic()
     // console.log(search);
     const { data: pets = [], isLoading } = useQuery({
-        queryKey: ['pets', search],
+        queryKey: ['pets'],
         queryFn: async () => {
-            const res = await axiosPublic.get(`/api/v1/allPets-read?search=${search}`)
+            const res = await axiosPublic.get('/api/v1/allPets-read')
             return res.data;
         }
     })

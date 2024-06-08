@@ -5,6 +5,7 @@ import { SiNamecheap } from "react-icons/si";
 import { Link } from "react-router-dom";
 
 const AllPetCart = ({ item }) => {
+    console.log(item);
     const { _id, name, image, category, country, date, size, } = item || {}
 
     return (
