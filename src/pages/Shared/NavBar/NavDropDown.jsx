@@ -2,11 +2,13 @@ import { Link, NavLink } from "react-router-dom";
 import useAuth from "../../../hooks/useAuth";
 
 import logoImg from '../../../assets/images/logo/user.webp'
+import useAdmin from "../../../hooks/useAdmin";
 
 
 const NavDropDown = () => {
 
     const { user, logOutUser } = useAuth()
+    const [isAdmin] = useAdmin()
 
     const handleLogout = () => {
         logOutUser()
@@ -29,7 +31,15 @@ const NavDropDown = () => {
 
                     <p className="text-lg text-center">{user?.displayName}</p>
 
-                    <li className="hover:text-sky-500"><Link to="/dashboard">Dashboard</Link></li>
+                    {/* conditional Dashboard route */}
+                    {user && !isAdmin && <li className="hover:text-sky-500"><Link to="/dashboard/userHome">Dashboard</Link></li>}
+
+                    {user && isAdmin && <li className="hover:text-sky-500"><Link to="/dashboard/adminHome">Dashboard</Link></li>}
+
+
+
+
+
                     {/* <li><a>Logout</a></li> */}
                     {
                         user ? <li>

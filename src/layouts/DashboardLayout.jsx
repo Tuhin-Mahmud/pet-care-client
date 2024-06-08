@@ -19,7 +19,10 @@ const DashboardLayout = () => {
                 </div>
                 <div className="divider"></div>
 
-                <h1 className="text-xl text-center uppercase text-sky-300 ">Admin Dashboard</h1>
+                {isAdmin ? <h1 className="text-xl text-center uppercase text-sky-300 ">Admin Dashboard</h1>
+                    :
+                    <h1 className="text-xl text-center uppercase text-sky-300 ">User Dashboard</h1>
+                }
                 <ul className="menu px-2 mt-4 md:w-full w-1/2 mx-auto  ">
 
                     {
