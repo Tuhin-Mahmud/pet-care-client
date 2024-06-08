@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 
-import { FaFacebook, FaInstagramSquare, FaTwitter } from "react-icons/fa";
+import { FaFacebook, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 const TeamCart = ({ member }) => {
     return (
@@ -12,8 +12,8 @@ const TeamCart = ({ member }) => {
                     <h3 className="capitalize  font-sans text-center">{member.title}</h3>
                 </div>
                 <div className="flex items-center justify-center mt-5 space-x-5 text-2xl">
-                    <a href=""><FaFacebook className="hover:text-sky-400 duration-500 text-blue-500" /></a>
-                    <a href=""><FaInstagramSquare className="duration-500 text-sky-400  " /></a>
+                    <a href={member.facBook}><FaFacebook className="hover:text-sky-400 duration-500 text-blue-500" /></a>
+                    <a href={member.linkedin}><FaLinkedin className="duration-500 text-sky-400  " /></a>
                     <a href=""><FaTwitter className="text-sky-400 duration-500 " /></a>
 
 
