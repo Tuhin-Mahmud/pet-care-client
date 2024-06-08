@@ -41,14 +41,7 @@ const RidSiteOffer = () => {
                 </div>
             </div>
             {/* address */}
-            <div className='flex items-center mt-20 border justify-center hover:bg-[#00224D] bg-[#FFEFEF] hover:text-white rounded-xl duration-1000'>
-                <CiLocationOn className='text-5xl text-sky-300' />
-                <div className='ml-5  py-5 text-lg'>
-                    <h2 className='text-4xl'>Our Address</h2>
-                    <h1 className='my-5'>168/170, Ave 01, Mirpur,</h1>
-                    <h1>Dhaka, Bangladesh</h1>
-                </div>
-            </div>
+
         </div>
 
     );
