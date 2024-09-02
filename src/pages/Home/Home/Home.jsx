@@ -6,6 +6,8 @@ import Offers from "../Offers/Offers";
 import PetCategory from "../PetCategory/PetCategory";
 import Testimonials from "../Testimonials/Testimonials";
 import PetFood from "./PetFood/PetFood";
+import Budget from "../../Budget/Budget";
+import Choice from "../../Budget/Choice";
 
 
 const Home = () => {
@@ -18,6 +20,8 @@ const Home = () => {
             <PetCategory></PetCategory>
             <Offers></Offers>
             <PetFood></PetFood>
+            <Budget></Budget>
+            <Choice></Choice>
             <NewsLetter></NewsLetter>
             <Faq></Faq>
             <Testimonials></Testimonials>
