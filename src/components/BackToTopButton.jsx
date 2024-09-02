@@ -38,7 +38,7 @@ const BackToTopButton = () => {
 
 
                     }}
-                    className="btn border border-sky-400 drop-shadow-2xl shadow-white"
+                    className="btn border border-sky-400 drop-shadow-2xl shadow-white bg-gray-300"
                 ><FaArrowUp className="text-xl animate-bounce " /></button>
 
             }

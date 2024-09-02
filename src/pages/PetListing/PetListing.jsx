@@ -17,7 +17,8 @@ const PetListing = () => {
     const { data: pets = [], isLoading } = useQuery({
         queryKey: ['petListing', search],
         queryFn: async () => {
-            const res = await axiosPublic.get(`/api/v1/allPets-read?search=${search || ''}`)
+            const res = await axiosPublic.get(`/api/v1/allPets-read?search=${search}`)
+            console.log(res.data)
             return res.data;
         }
     })
