@@ -1,7 +1,7 @@
 const Budget = () => {
     return (
         <div className="my-10">
-            <h1 className="text-xl md:text-4xl font-serif md:font-mono text-center mb-5">Why Trust Us with <br /> Your Pet&apos;s Care?</h1>
+            <h1 className="text-xl md:text-4xl font-serif  text-center mb-5">Why Trust Us with <br /> Your Pet&apos;s Care?</h1>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 text-center  ">
                 {/* ---1--- */}
                 <div className="border p-4">
