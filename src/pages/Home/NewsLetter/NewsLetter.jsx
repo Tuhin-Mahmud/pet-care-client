@@ -1,11 +1,23 @@
-// import { useState } from 'react';
 import { toast } from 'react-toastify';
 import './news.css';
+import { useState } from 'react';
 const NewsLetter = () => {
-    // const [email, setEmail] = useState('')
+    const [inputValue, setInputValue] = useState('')
+    const [inputText, setInputText] = useState('')
 
-    const handleConnect = () => {
-        toast.success("You'r Connect Our news Letter, Thanks.")
+
+    const handleConnect = e => {
+        e.preventDefault()
+
+        if (inputValue) {
+            toast.success("You'r Connect Our news Letter, Thanks.")
+            setInputValue('')
+            setInputText('')
+        }
+        else {
+            setInputText('please type your email.')
+
+        }
 
     }
     return (
@@ -18,10 +30,14 @@ const NewsLetter = () => {
                 </div>
 
                 <div className=' '>
-                    <input name='email' className="w-3/4  md:w-2/3 pl-7  py-5 rounded " type="email" placeholder="Type Your Email" />
+                    <input
+                        value={inputValue}
+                        onChange={(e) => setInputValue(e.target.value)}
+                        name='email' className="w-3/4  md:w-2/3 pl-7  py-5 rounded " type="email" placeholder="Type Your Email" required />
 
-                    <input onClick={handleConnect} title='thanks ' className="border px-9 py-4  text-white uppercase rounded-xl -ml-20 bg-sky-300" type="button" value="Connect" />
+                    <input onClick={handleConnect} className="border px-9 py-4  text-white uppercase rounded-xl -ml-20 bg-sky-300" type="submit" value="Connect" />
                 </div>
+                <p className=' font-mono text-stone-950 text-lg'>{inputText}</p>
             </div>
 
         </div>
