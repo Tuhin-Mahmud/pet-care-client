@@ -26,9 +26,11 @@ const DonationCampaign = () => {
 
             <CoverImg image={petListingImg} text={'donation campaigns'}></CoverImg>
 
-            <CoverText heading={'donation campaigns collection'} subHeading={'donate pets'}></CoverText>
+            <div className='pl-5 md:pl-0'>
+                <CoverText heading={'donation campaigns collection'} subHeading={'donate pets'}></CoverText>
+            </div>
             {/* ----------------- */}
-            <div className='grid grid-cols-1 md:grid-cols-3 gap-4'>
+            <div className='grid grid-cols-1 md:grid-cols-3 gap-4 px-5 md:px-0'>
                 {
                     campaign.map(item => <CampaignCart
                         key={item._id}

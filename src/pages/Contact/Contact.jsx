@@ -29,8 +29,8 @@ const Contact = () => {
             <CoverImg image={contactImg} text={'contact us page'}></CoverImg>
             {/* contact us */}
             <div className='flex flex-col md:flex-row my-10'>
-                <div className='flex-1 w-full px-4 '>
-                    <div className=" min-h-full bg-gray-50 relative overflow-hidden hidden lg:block ">
+                <div className='flex-1 w-full px-4 mb-8 md:mb-0'>
+                    <div className=" min-h-full bg-gray-100 relative overflow-hidden  ">
                         <div className='w-1/2 mx-auto mt-32 space-y-10'>
                             <h1 className=" text-2xl   mt-5 text-center ">Hey!  Welcome to Contact Us</h1>
                             <p className='flex items-center'><IoLocationSharp className='text-sky-400 text-5xl mr-3' />W84 New Park Lan, Uttara, <br /> Dhaka Bangladesh</p>
@@ -41,12 +41,14 @@ const Contact = () => {
                         <span className="bg-sky-800/50 w-36 h-36 -top-5 -left-5  rounded-full absolute z-10"></span>
                     </div>
                 </div>
+
+
                 {/* form */}
-                <div className='flex-1'>
+                <div className='flex-1 px-4 bg-gray-100 py-2'>
                     <div className='space-y-2 mb-5'>
                         <h3 className='text-2xl font-serif text-sky-400'>Contact Us</h3>
-                        <h1 className='text-5xl font-serif'>Let&apos;s Talk Question.</h1>
-                        <p>The domestic dog is a doiated dendant of the wolf. The dog derived from an ancient, extinct wolf, and the modern grey.</p>
+                        <h1 className='md:text-5xl text-4xl font-serif'>Let&apos;s Talk Question.</h1>
+                        <p>We’d love to hear from you! Whether you have questions, feedback, or just want to say hello, feel free to reach out to us. Your thoughts and inquiries are important, and we’re here to assist you in any way we can.</p>
                     </div>
                     <form onSubmit={handleSubmit(onSubmit)}>
                         <div className='grid grid-cols-1 md:grid-cols-2 gap-5 form-control '>
@@ -88,6 +90,10 @@ const Contact = () => {
                     </form>
                 </div>
             </div>
+
+
+
+
             {/* google map */}
             <div className='my-28'>
                 <Map></Map>

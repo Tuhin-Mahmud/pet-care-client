@@ -10,7 +10,7 @@ const Faq = () => {
 
 
     return (
-        <div className="px-3 md:px-0">
+        <div className="px-5 md:px-3 lg:px-0">
             <div className=" bg-sky-50 rounded py-5 ">
                 <div className="flex justify-between flex-col lg:flex-row items-center">
                     <div className="flex-1  md:px-24 ">

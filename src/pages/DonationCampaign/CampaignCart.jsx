@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 const CampaignCart = ({ item }) => {
     const { _id, name, image, age, maximumDonation, donated, } = item || {};
     return (
-        <div>
-            <div className="h-[500px] bg-base-100 shadow-xl rounded-lg">
+        <div className="">
+            <div className="h-[500px] bg-base-100 shadow-xl rounded-lg ">
                 <div className="p-3 relative ">
                     <figure><img className="h-[300px] rounded-lg object-cover" src={image} alt="Shoes" /></figure>
                     <p className="absolute top-5 px-3 text-white rounded bg-stone-700 right-5">age: {age}</p>

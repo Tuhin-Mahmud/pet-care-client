@@ -22,20 +22,20 @@ const Gallery = () => {
     }
 
     return (
-        <div>
+        <div className=''>
             {/* <div className=' mb-36'>
                 <img className='h-[450px] w-full object-cover rounded-xl ' src={gallery} alt="" />
 
                 <h2 className='-mt-36 ml-24 uppercase text-white text-5xl'> Pet Gallery </h2>
             </div> */}
             <CoverImg image={gallery} text={'pet gallery'}></CoverImg>
-            <div className="  my-5 ">
-                <h2 className="border-s-4 text-4xl font-serif border-sky-400 ps-2 ">My Pet Gallery</h2>
+            <div className="  my-5 pl-5 md:pl-0">
+                <h2 className="border-s-4 text-4xl font-serif border-sky-400 ps-2 ">Our Pet Gallery</h2>
                 <h1 className="border-s-4 text-xl border-sky-300 ps-2">Gallery</h1>
             </div>
             {/* gallery */}
 
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 px-5 md:px-0'>
                 {
                     galleries.map(gallery => <GalleryCart
                         key={gallery._id}

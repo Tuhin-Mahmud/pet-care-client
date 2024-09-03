@@ -13,7 +13,7 @@ const RidSiteOffer = () => {
     }
 
     return (
-        <div className=' md:col-span-2 pt-5'>
+        <div className=' md:col-span-2 mt-0 md:pt-5'>
 
             <div className='py-10  border duration-1000 hover:bg-[#00224D] rounded-xl space-y-5 h-[600px] bg-[#FFEFEF] hover:text-white '>
                 <div className='text-center'>
@@ -32,7 +32,7 @@ const RidSiteOffer = () => {
                 <button onClick={handleBooking} className='btn btn-outline border-sky-500  flex  mx-auto text-sky-500 hover:bg-white hover:text-black hover:italic uppercase'>Book Now</button>
             </div>
             {/* call us now */}
-            <div className='flex items-center mt-20 border justify-center hover:bg-[#00224D] bg-[#FFEFEF] hover:text-white rounded-xl duration-1000'>
+            <div className='flex items-center mt-10 md:mt-20 border justify-center hover:bg-[#00224D] bg-[#FFEFEF] hover:text-white rounded-xl duration-1000'>
                 <FaPhoneAlt className='text-5xl text-sky-300' />
                 <div className='ml-5  py-5 text-lg'>
                     <h2 className='text-4xl'>Call Us Now</h2>
@@ -41,7 +41,7 @@ const RidSiteOffer = () => {
                 </div>
             </div>
             {/* address */}
-            <div className='flex items-center mt-20 border justify-center hover:bg-[#00224D] bg-[#FFEFEF] hover:text-white rounded-xl duration-1000'>
+            <div className='flex items-center mt-10 md:mt-20 border justify-center hover:bg-[#00224D] bg-[#FFEFEF] hover:text-white rounded-xl duration-1000'>
                 <CiLocationOn className='text-5xl text-sky-300' />
                 <div className='ml-5  py-5 text-lg'>
                     <h2 className='text-4xl'>Our Address</h2>

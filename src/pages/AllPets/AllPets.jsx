@@ -22,7 +22,7 @@ const AllPets = () => {
 
             {/*all pets */}
             <SectionTitle subHeading="your Favourite pets" Heading={`your pets list`}></SectionTitle>
-            <div className="grid grid-cols-1 md:grid-cols-3">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                 {
                     allPetCategory.map(item => <AllPetCart
                         key={item._id}

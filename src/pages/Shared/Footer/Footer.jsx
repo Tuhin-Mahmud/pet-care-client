@@ -7,7 +7,7 @@ const Footer = () => {
                 <div className="flex ">
                     <aside>
                         <img className='w-1/4' src={logo} alt="" />
-                        <p>ACME Industries Ltd.<br />Providing reliable tech since 1992</p>
+                        <p>Peat Care Adoption Ltd.<br />Providing reliable tech since 1992</p>
                     </aside>
                     <nav className="flex flex-col ml-14">
                         <h6 className="footer-title text-xl">Services</h6>

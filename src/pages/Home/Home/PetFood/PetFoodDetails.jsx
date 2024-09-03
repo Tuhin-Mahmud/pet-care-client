@@ -79,14 +79,14 @@ const PetFoodDetails = () => {
 
 
     return (
-        <div className="mb-20">
+        <div className="mb-20 ">
             <div className=' mb-52'>
                 <img className='h-[450px] w-full object-cover rounded-xl ' src={detailsImg} alt="" />
                 <h2 className='-mt-36 ml-24 uppercase text-white text-5xl'> Pet Food Details  </h2>
 
             </div>
             {/* carousel */}
-            <div className="flex flex-col md:flex-row">
+            <div className="flex flex-col md:flex-row px-5 md:px-0">
                 <div className=" md:flex-1 h-1/2 w-full">
                     <Carousel>
 
@@ -133,7 +133,7 @@ const PetFoodDetails = () => {
 
                             </div>
                             <div className=" mx-auto  ">
-                                <button onClick={handleAdToCart} className="uppercase font-serif bg-sky-200 px-16 py-3 rounded-md hover:bg-gray-300 duration-500">ADD To  cart </button>
+                                <button onClick={handleAdToCart} className="uppercase font-serif bg-sky-200  px-12 md:px-16 py-3 rounded-md hover:bg-gray-300 duration-500">ADD To  cart </button>
                             </div>
                         </div>
                     </div>
@@ -142,7 +142,7 @@ const PetFoodDetails = () => {
 
 
             {/*tab*/}
-            <div className="w-1/2 ">
+            <div className="md:w-1/2 px-5 md:px-0">
                 <Tabs selectedIndex={tabIndex} onSelect={(index) => setTabIndex(index)}>
                     <TabList>
                         <Tab><p className="text-xl font-medium font-sans">Description</p></Tab>
@@ -163,7 +163,21 @@ const PetFoodDetails = () => {
                         </div>
                     </TabPanel>
                     <TabPanel>
-                        <h1 className="text-2xl ml-32">Coming soon</h1>
+                        <div>
+                            <h1 className="text-xl font-bold mb-3 ">Pet Food Overload: Navigating Through Excessive Information</h1>
+                            <p>With so many pet food options and opinions out there, it’s easy to feel overwhelmed. From kibble to raw diets, grain-free to organic, the sheer volume of information can make choosing the right food for your pet seem daunting.</p>
+                            <p>
+                                <b>Cutting Through the Noise:</b>
+                                Not all advice is created equal. When it comes to your pet’s diet, it&apos;s important to rely on evidence-based information and consult with your veterinarian. They can help you sort through the noise and make informed decisions tailored to your pet’s specific needs.
+                            </p>
+                            <p><b>Key Considerations:</b>
+                                Focus on the basics: balanced nutrition, quality ingredients, and your pet’s individual dietary requirements. Avoid getting lost in trends or marketing buzzwords that may not align with your pet&apos;s health.
+                            </p>
+                            <p>
+                                <b>Making Informed Choices:</b>
+                                While it’s helpful to be informed, too much conflicting advice can lead to confusion. Stick to trusted brands and sources, and remember that the best diet for your pet is one that keeps them healthy, happy, and full of energy.
+                            </p>
+                        </div>
 
                     </TabPanel>
                     <TabPanel>

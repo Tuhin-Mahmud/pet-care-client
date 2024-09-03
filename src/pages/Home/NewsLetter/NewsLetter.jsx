@@ -21,7 +21,7 @@ const NewsLetter = () => {
 
     }
     return (
-        <div className='px-3 md:px-0'>
+        <div className='px-5 md:px-3 lg:px-0'>
             <div className="bgNews my-10 overflow-x-auto ">
 
                 <div className=" px-14 py-20 rounded-xl flex flex-col  ">

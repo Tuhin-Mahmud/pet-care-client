@@ -18,7 +18,7 @@ const PetFood = () => {
     return (
         <div>
             <SectionTitle subHeading={'Limit Offer'} Heading={'Best food for your loving Pet'}></SectionTitle>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 px-10 md:px-3 lg:px-0">
                 {
                     petFoods.map(item => <PetFoodCart
                         key={item._id}

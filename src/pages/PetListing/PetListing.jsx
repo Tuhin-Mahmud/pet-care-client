@@ -13,6 +13,7 @@ import useAxiosPublic from '../../hooks/useAxiosPublic';
 const PetListing = () => {
     const [search, setSearch] = useState('')
     const axiosPublic = useAxiosPublic()
+    console.log(typeof search);
     // const [pets, isLoading] = usePets(search)
     const { data: pets = [], isLoading } = useQuery({
         queryKey: ['petListing', search],
@@ -21,6 +22,7 @@ const PetListing = () => {
             console.log(res.data)
             return res.data;
         }
+
     })
 
     const handleSubmit = e => {
@@ -46,7 +48,7 @@ const PetListing = () => {
                     <CoverText heading={'All pet listing here'} subHeading={'Listing pet'}></CoverText>
                     <div>
                         <form onSubmit={handleSubmit}>
-                            <input name="search" type="text" className="input input-bordered" placeholder='Please Type your pet' />
+                            <input name="search" type="text" className="input input-bordered mb-2 md:mb-0" placeholder='Please Type your pet' />
                             <input type="submit" value="Search"
                                 className="py-3 px-3 rounded-lg bg-slate-400 border  text-white hover:bg-sky-400 duration-700 " />
                         </form>

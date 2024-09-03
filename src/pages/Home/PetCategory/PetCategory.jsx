@@ -18,7 +18,7 @@ const PetCategory = () => {
         <div>
             <SectionTitle subHeading={'our pet care service'} Heading={'our popular pet category'} description={'Choose Your Pet: Decide which type of pet best fits your lifestyle, whether its a dog cat, bird, fish, reptile, or small mammal.'}></SectionTitle>
             {/* category data */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 px-10 md:px-3 lg:px-0">
                 {
                     categories.map(category => <CategoryCard
                         key={category._id}
