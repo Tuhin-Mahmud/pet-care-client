@@ -2,7 +2,7 @@ const Budget = () => {
     return (
         <div className="my-10">
             <h1 className="text-xl md:text-4xl font-serif  text-center mb-5">Why Trust Us with <br /> Your Pet&apos;s Care?</h1>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 text-center  ">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 text-center  px-3 md:px-0">
                 {/* ---1--- */}
                 <div className="border p-4">
                     <h1 className="text-5xl font-serif  ">3000</h1>
