@@ -51,7 +51,7 @@ const router = createBrowserRouter([
             {
                 path: '/allPetsDetails/:id',
                 element: <AllPetDetails></AllPetDetails>,
-                loader: ({ params }) => fetch(`http://localhost:5000/api/v1/allPet-read/${params.id}`)
+                loader: ({ params }) => fetch(`https://pet-care-server-delta.vercel.app/api/v1/allPet-read/${params.id}`)
             },
             {
                 path: '/petListing',
@@ -61,7 +61,7 @@ const router = createBrowserRouter([
             {
                 path: '/petDetails/:id',
                 element: <PetLisDetails></PetLisDetails>,
-                loader: ({ params }) => fetch(`http://localhost:5000/api/v1/allPet-read/${params.id}`)
+                loader: ({ params }) => fetch(`https://pet-care-server-delta.vercel.app/api/v1/allPet-read/${params.id}`)
 
             },
             {
@@ -87,14 +87,14 @@ const router = createBrowserRouter([
             {
                 path: '/campaignsDetails/:id',
                 element: <PrivetRout><CampaignsDetails /></PrivetRout>,
-                loader: ({ params }) => fetch(`http://localhost:5000/api/v1/campaigns-read/${params.id}`)
+                loader: ({ params }) => fetch(`https://pet-care-server-delta.vercel.app/api/v1/campaigns-read/${params.id}`)
             },
 
             // pet food related routs
             {
                 path: '/petFood/:id',
                 element: <PetFoodDetails></PetFoodDetails>,
-                loader: ({ params }) => fetch(`http://localhost:5000/api/v1/petFood-read/${params.id}`)
+                loader: ({ params }) => fetch(`https://pet-care-server-delta.vercel.app/api/v1/petFood-read/${params.id}`)
             },
             {
                 path: '/cart',
@@ -134,7 +134,7 @@ const router = createBrowserRouter([
             {
                 path: 'myAddedPetUpdate/:id',
                 element: <PrivetRout><MyAddedUpdate /></PrivetRout>,
-                loader: ({ params }) => fetch(`http://localhost:5000/api/v1/pedAdded-read/${params.id}`)
+                loader: ({ params }) => fetch(`https://pet-care-server-delta.vercel.app/api/v1/pedAdded-read/${params.id}`)
             },
             {
                 path: 'createDonationCampaign',

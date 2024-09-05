@@ -2,6 +2,7 @@ import { NavLink, Outlet } from "react-router-dom";
 import useAuth from "../hooks/useAuth";
 import { FaHome } from "react-icons/fa";
 import useAdmin from "../hooks/useAdmin";
+import logoImg from '../assets/images/logo/profile.jpg'
 
 const DashboardLayout = () => {
     const { user } = useAuth()
@@ -12,7 +13,10 @@ const DashboardLayout = () => {
         <div className=" flex flex-col md:flex-row ">
             <div className="md:w-64 bg-white md:min-h-screen py-8 drop-shadow-xl overflow-y-scroll ">
                 <div className="mx-auto">
-                    <img className="w-24 mx-auto rounded-full " src={user?.photoURL} alt="" />
+
+                    <img className="w-24 mx-auto rounded-full " src={user?.photoURL ? user?.photoURL : logoImg} alt="" />
+
+
                     <h2 className="text-center text-xl font-semibold pt-4">{user?.displayName}</h2>
                     <h2 className="text-center font-semibold ">{user?.email}</h2>
 

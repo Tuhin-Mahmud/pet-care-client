@@ -9,7 +9,7 @@ import useAuth from '../../hooks/useAuth';
 import { useForm } from 'react-hook-form';
 import toast from 'react-hot-toast';
 const Login = () => {
-    const { loginUser, user } = useAuth()
+    const { loginUser } = useAuth()
     const [showPassword, setShowPassword] = useState(false)
     const location = useLocation()
     const navigate = useNavigate()

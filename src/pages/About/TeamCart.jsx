@@ -4,7 +4,7 @@ import { FaFacebook, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 const TeamCart = ({ member }) => {
     return (
-        <div className="h-[450px] border rounded shadow-xl hover:border-sky-300 hover:-translate-y-2 transform duration-1000">
+        <div className="h-[450px] border rounded shadow-xl hover:border-sky-400 hover:-translate-y-2 transform duration-1000">
             <div className="">
                 <img className="h-[300px] w-full object-cover rounded" src={member.image} alt="" />
                 <div className="mt-5">

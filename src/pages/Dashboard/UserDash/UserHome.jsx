@@ -20,7 +20,7 @@ const UserHome = () => {
 
     return (
         <div className="">
-            <h1 className="flex text-2xl md:text-5xl">
+            <h1 className="flex text-3xl  md:text-5xl">
                 <span>Hi! Well Come </span>,
                 <p className="ml-3"> {user?.displayName ? user.displayName : 'Back'}</p>
 
@@ -29,7 +29,7 @@ const UserHome = () => {
             <div className="mt-10">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-5" >
                     {/* 1 */}
-                    <div className="stats drop-shadow-lg  w-72 py-6  bg-gradient-to-r from-cyan-100 to-gray-300">
+                    <div className="stats drop-shadow-lg  md:w-72 py-6  bg-gradient-to-r from-cyan-100 to-gray-300">
 
                         <div className="stat p">
                             <div className="stat-title text-xl mb-3">Total Pet Listing</div>
@@ -41,7 +41,7 @@ const UserHome = () => {
 
                     </div>
                     {/* 2 */}
-                    <div className="stats  drop-shadow-lg w-72 bg-gradient-to-r from-stone-200 to-pink-200 ">
+                    <div className="stats  drop-shadow-lg md:w-72 bg-gradient-to-r from-stone-200 to-pink-200 ">
 
                         <div className="stat">
                             <div className="stat-title">Total Food Page </div>
@@ -54,7 +54,7 @@ const UserHome = () => {
 
                     </div>
                     {/* 3 */}
-                    <div className="stats drop-shadow-lg w-72 bg-gradient-to-r from-white to-stone-200">
+                    <div className="stats drop-shadow-lg md:w-72 bg-gradient-to-r from-white to-stone-200">
 
                         <div className="stat">
                             <div className="stat-title">Total Add To Cart Views</div>
@@ -85,7 +85,7 @@ const UserHome = () => {
                 </div>
             </div>
             <h2 className="text-xl font-mono">Your everyday Plane</h2>
-            <div className="bg-yellow-200 border h-24 rounded-md p-4">
+            <div className="bg-yellow-200 border h-32 md:h-24 rounded-md p-4">
                 <h4 className="text-3xl font-serif">Pet Care everyDay</h4>
                 <p className="text-xl font-serif ">We want to ensure the happiness for the pets.</p>
             </div>

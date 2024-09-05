@@ -27,11 +27,11 @@ const AdminHome = () => {
             </h1>
             {/* --- */}
             <div className="mt-10">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-5" >
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-5 " >
                     {/* 1 */}
-                    <div className="stats drop-shadow-lg  w-72 py-6  bg-gradient-to-r from-cyan-100 to-gray-300">
+                    <div className="stats drop-shadow-lg  md:w-72 py-6  bg-gradient-to-r from-cyan-100 to-gray-300">
 
-                        <div className="stat p">
+                        <div className="stat ">
                             <div className="stat-title text-xl mb-3">Total user</div>
                             <div className="flex items-center">
                                 <MdOutlinePets className=" mr-10 text-4xl text-sky-500" />
@@ -41,7 +41,7 @@ const AdminHome = () => {
 
                     </div>
                     {/* 2 */}
-                    <div className="stats  drop-shadow-lg w-72 bg-gradient-to-r from-stone-200 to-pink-200 ">
+                    <div className="stats  drop-shadow-lg md:w-72 bg-gradient-to-r from-stone-200 to-pink-200 ">
 
                         <div className="stat">
                             <div className="stat-title">Total Cart </div>
@@ -54,7 +54,7 @@ const AdminHome = () => {
 
                     </div>
                     {/* 3 */}
-                    <div className="stats drop-shadow-lg w-72 bg-gradient-to-r from-white to-stone-200">
+                    <div className="stats drop-shadow-lg md:w-72 bg-gradient-to-r from-white to-stone-200">
 
                         <div className="stat">
                             <div className="stat-title">All Pet </div>
@@ -85,7 +85,7 @@ const AdminHome = () => {
                 </div>
             </div>
             <h2 className="text-xl font-mono">Your everyday Plane</h2>
-            <div className="bg-yellow-200 border h-24 rounded-md p-4">
+            <div className="bg-yellow-200 border h-28 md:h-24 rounded-md p-4">
                 <h4 className="text-3xl font-serif">Pet Care everyDay</h4>
                 <p className="text-xl font-serif ">We want to ensure the happiness for the pets.</p>
             </div>

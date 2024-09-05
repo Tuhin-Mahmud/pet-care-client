@@ -1,8 +1,9 @@
 /* eslint-disable react/prop-types */
-import { GoogleAuthProvider, createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from "firebase/auth";
+import { GoogleAuthProvider, GithubAuthProvider, createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from "firebase/auth";
 import { createContext, useEffect, useState } from "react";
 import { auth } from "../firebase/firebase.config";
 import useAxiosPublic from "../hooks/useAxiosPublic";
+
 
 
 
@@ -14,12 +15,18 @@ const AuthProvider = ({ children }) => {
     const axiosPublic = useAxiosPublic()
 
 
-    // google login 
+    // google and github login 
     const googlProvider = new GoogleAuthProvider();
+    const githubProvider = new GithubAuthProvider()
 
     const googleLogin = () => {
         setLoading(true)
         return signInWithPopup(auth, googlProvider)
+    }
+
+    const githubLogin = () => {
+        setLoading(true)
+        return signInWithPopup(auth, githubProvider)
     }
 
 
@@ -84,6 +91,7 @@ const AuthProvider = ({ children }) => {
         createUser,
         loginUser,
         googleLogin,
+        githubLogin,
         logOutUser,
         userProfileUpdate,
     }

@@ -8,25 +8,32 @@ import CoverText from '../../components/common/CoverText';
 import PetListingCatCart from './PetListingCatCart';
 import { useState } from "react";
 import useAxiosPublic from '../../hooks/useAxiosPublic';
+// import usePets from '../../hooks/usePets';
 
 
 const PetListing = () => {
     const [search, setSearch] = useState('')
+    // const [pets, setPets] = useState([])
+    // const [isLoading, setIsLoading] = useState(true)
     const axiosPublic = useAxiosPublic()
     console.log(typeof search);
     // const [pets, isLoading] = usePets(search)
+
     const { data: pets = [], isLoading } = useQuery({
-        queryKey: ['petListing', search],
+        queryKey: ['petListing',],
         queryFn: async () => {
-            const res = await axiosPublic.get(`/api/v1/allPets-read?search=${search}`)
+            const res = await axiosPublic.get('/api/v1/allPets-read')
             console.log(res.data)
             return res.data;
         }
 
     })
 
+
+    // TODO:
     const handleSubmit = e => {
         e.preventDefault()
+        console.log('click', e);
         const searchText = e.target.search.value;
         setSearch(searchText)
 

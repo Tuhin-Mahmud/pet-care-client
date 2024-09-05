@@ -8,7 +8,6 @@ const PetFoodCart = ({ food }) => {
 
 
     const handleWishList = () => {
-
         toast('WishList added successfully thanks.')
     }
 
@@ -26,7 +25,7 @@ const PetFoodCart = ({ food }) => {
                         <Link to={`/petFood/${_id}`}>
                             <div className="border px-2 py-2 rounded-lg bg-gray-100 text-lg font-mono hover:bg-sky-300 hover:text-white duration-700 ">Details</div>
                         </Link>
-                        <div onClick={handleWishList} className="border px-2 italic py-2 rounded-lg bg-gray-100 text-lg font-mono hover:bg-sky-300 duration-700 hover:text-white">WishList</div>
+                        <div onClick={handleWishList} className="border px-2 italic py-2 rounded-lg bg-gray-100 text-lg font-mono hover:bg-sky-300 duration-700 hover:text-white cursor-pointer">WishList</div>
                     </div>
                 </div>
             </div>

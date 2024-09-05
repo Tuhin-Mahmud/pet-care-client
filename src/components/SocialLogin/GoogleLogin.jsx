@@ -26,7 +26,7 @@ const GoogleLogin = () => {
                         console.log(res.data);
                         // navigate('/')
                         navigate(from, { replace: true });
-                        toast.success('user loggedIn successfully..')
+                        toast.success('user google loggedIn successfully..')
 
                     })
             })
@@ -35,7 +35,7 @@ const GoogleLogin = () => {
 
     return (
         <div className="md:mx-auto">
-            <button onClick={handleGoogle} className="font-serif  flex items-center py-2 text-xl px-3  shadow-lg border rounded-md border-sky-200 outline-base-300  "><FcGoogle className="text-3xl mr-3 " /><span className="hidden md:block"> Continue with</span> google</button>
+            <button onClick={handleGoogle} className="font-serif  flex items-center py-2 text-xl px-3  shadow-lg border rounded-md border-sky-200 outline-base-300  "><FcGoogle className="text-3xl mr-3 " /><span className="hidden md:block"> Continue with</span>     google</button>
         </div>
     );
 };

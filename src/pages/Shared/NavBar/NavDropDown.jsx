@@ -1,8 +1,7 @@
 import { Link, NavLink } from "react-router-dom";
 import useAuth from "../../../hooks/useAuth";
-
-import logoImg from '../../../assets/images/logo/user.webp'
 import useAdmin from "../../../hooks/useAdmin";
+import logoImg from '../../../assets/images/logo/profile.jpg'
 
 
 const NavDropDown = () => {

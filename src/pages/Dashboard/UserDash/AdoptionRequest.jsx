@@ -34,7 +34,7 @@ const AdoptionRequest = () => {
                             <th className="py-4 px-6 text-lg text-left border-b">Image</th>
                             <th className="py-4 px-6 text-lg text-left border-b">Name</th>
                             <th className="py-4 px-6 text-lg text-left border-b">Email</th>
-                            <th className="py-4 px-6 text-lg border-b text-end">Phone Number</th>
+                            <th className="py-4 px-1 md:px-6 text-sm border-b text-end">Phone Number</th>
                         </tr>
                     </thead>
                     <tbody>
