@@ -20,9 +20,9 @@ const About = () => {
                 <div className='flex-1 px-5'>
                     <img className='rounded-xl' src={about} alt="" />
                 </div>
-                <div className='flex-1 space-y-4 px-5 '>
+                <div className='flex-1 md:space-y-4 px-5 mt-4 md:mt-0'>
                     <h3 className='text-xl font-bold text-sky-500'>About us</h3>
-                    <h1 className='text-5xl font-serif'>Your pet deserver the best service</h1>
+                    <h1 className='text-xl md:text-5xl font-serif'>Your pet deserver the best service</h1>
 
                     <p className='text-slate-500'>Broadcast neglectful and poignantly well until and some listlessly amidst suc cessful concentrically ably dachshund more far but forwardly echidna outside tiger split thanks far vibrantly gosh hence pangolin however notwithstanding leapt untruthful gauchely yikes komodo dully more.</p>
                     <p className='text-slate-500'>As abandoned winced this more far wow jeepers near more wow goodness so revealed much along worm some grasshopper.</p>
@@ -31,15 +31,15 @@ const About = () => {
             </div>
             {/* care card */}
             <div className='my-10 md:flex gap-5 px-5'>
-                <div className='flex items-center  py-12 md:w-1/3 justify-center bg-white drop-shadow-xl border rounded-md'>
+                <div className='hover:bg-gray-200 duration-400 transition flex items-center  py-12 md:w-1/3 justify-center bg-white drop-shadow-xl border rounded-md'>
                     <FaCat className='text-5xl mr-5 text-stone-500/65' />
-                    <div>
+                    <div className=''>
                         <h2 className='text-4xl font-serif capitalize'>We Care Pets</h2>
                         <p className='text-lg capitalize'>Pet Sheltering & Adoption</p>
 
                     </div>
                 </div>
-                <div className='flex items-center  py-12 md:w-1/3 justify-center bg-white drop-shadow-xl border my-5 md:my-0 rounded-md'>
+                <div className='hover:bg-gray-200 duration-400 transition flex items-center  py-12 md:w-1/3 justify-center bg-white drop-shadow-xl border my-5 md:my-0 rounded-md'>
                     <FaDog className='text-5xl mr-5 text-stone-800/65' />
                     <div>
                         <h2 className='text-4xl font-serif capitalize'>We Heal Pets</h2>
@@ -47,7 +47,7 @@ const About = () => {
 
                     </div>
                 </div>
-                <div className='flex items-center  py-12 md:w-1/3 justify-center bg-white drop-shadow-xl border rounded-md'>
+                <div className=' hover:bg-gray-200 duration-400 transition flex items-center  py-12 md:w-1/3 justify-center bg-white drop-shadow-xl border rounded-md'>
                     <MdOutlinePets className='text-5xl mr-5 text-stone-500/65' />
                     <div>
                         <h2 className='text-4xl font-serif capitalize'>We Love Pets</h2>

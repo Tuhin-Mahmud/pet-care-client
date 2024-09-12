@@ -2,14 +2,14 @@ import logo from '../../../assets/images/logo/logo2.png'
 
 const Footer = () => {
     return (
-        <div className="bg-base-200">
-            <footer className="footer p-10 text-base-content">
-                <div className="flex ">
-                    <aside>
+        <div className="bg-base-200 p-10">
+            <footer className="footer text-base-content mb-10">
+                <div className="flex justify-between ">
+                    <aside className='mr-5 md:mr-0'>
                         <img className='w-1/4' src={logo} alt="" />
                         <p>Peat Care Adoption Ltd.<br />Providing reliable tech since 1992</p>
                     </aside>
-                    <nav className="flex flex-col ml-14">
+                    <nav className="flex flex-col mr-8 md:mr-0">
                         <h6 className="footer-title text-xl">Services</h6>
                         <a className="link link-hover">Branding</a>
                         <a className="link link-hover">Design</a>
@@ -17,7 +17,9 @@ const Footer = () => {
                         <a className="link link-hover">Advertisement</a>
                     </nav>
                 </div>
-                <div className='flex  w-full justify-between'>
+
+
+                <div className='flex  justify-between w-full'>
                     <nav className='flex flex-col'>
                         <h6 className="footer-title text-xl">Company</h6>
                         <a className="link link-hover">About us</a>
@@ -25,18 +27,18 @@ const Footer = () => {
                         <a className="link link-hover">Jobs</a>
                         <a className="link link-hover">Press kit</a>
                     </nav>
-                    <nav className='flex flex-col ml-14 '>
-                        <h6 className="footer-title text-xl text-sky-600">Opening Ours</h6>
-                        <a className="link link-hover text-lg font-mono">Mon - Fri: 9.00AM - 6.00PM</a>
-                        <a className="link link-hover text-lg font-mono">Saturday: 9.00AM - 6.00PM</a>
-                        <a className="link link-hover text-lg font-mono">Sunday: Closed
+                    <nav className='flex flex-col   ml-20 md:ml-0'>
+                        <h6 className="footer-title md:text-xl text-sky-600">Opening Ours</h6>
+                        <a className="link link-hover md:text-lg font-mono">Mon - Fri:  9.00AM - 6.00PM</a>
+                        <a className="link link-hover md:text-lg font-mono">Saturday: 9.00AM - 6.00PM</a>
+                        <a className="link link-hover md:text-lg font-mono">Sunday: Closed
                         </a>
                     </nav>
                 </div>
             </footer>
             <div className='divide-x-2'></div>
             <aside>
-                <p className="text-center">Copyright © 2024 - All right reserved by ACME Industries Ltd</p>
+                <p className="text-center">Copyright © 2024 - All right reserved by pet care LTD</p>
             </aside>
         </div>
     );

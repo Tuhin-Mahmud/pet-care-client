@@ -100,7 +100,7 @@ const Login = () => {
                             </label>
                         </div>
                         <div className=''>
-                            <input type="submit" value="Register" className=' duration-500 px-6 text-xl drop-shadow-xl rounded-lg py-3 outline-none bg-gray-200 hover:bg-sky-300 font-serif  ' />
+                            <input type="submit" value="Login" className=' duration-500 px-6 text-xl drop-shadow-xl rounded-lg py-3 outline-none bg-gray-200 hover:bg-sky-300 font-serif  ' />
 
                         </div>
                     </form>

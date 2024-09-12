@@ -11,11 +11,11 @@ const PrivetRout = ({ children }) => {
         return <div className="w-10 h-10 animate-[spin_2s_linear_infinite] rounded-full border-8 border-dotted border-sky-600"></div>
     }
 
-    if (user) {
+    if (user?.email) {
         return children;
     }
 
-    return <Navigate to='/login' state={{ from: location }}></Navigate>
+    return <Navigate to='/login' state={{ from: location }} replace></Navigate>
 
 };
 

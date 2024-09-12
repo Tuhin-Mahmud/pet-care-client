@@ -42,7 +42,7 @@ const Cart = () => {
         <div>
 
             <div className=' mb-32'>
-                <img className='h-[450px] w-full object-cover rounded-xl ' src={detailsImg} alt="" />
+                <img className='md:h-[450px] w-full object-cover rounded-xl ' src={detailsImg} alt="" />
                 <h2 className='-mt-36 ml-24 uppercase text-white text-5xl'> Cart</h2>
             </div>
             <div>
@@ -61,10 +61,10 @@ const Cart = () => {
                                 <th>
                                     #
                                 </th>
-                                <th className="text-xl">Image</th>
-                                <th className="text-xl">name</th>
-                                <th className="text-xl">Price</th>
-                                <th className="text-xl">Action</th>
+                                <th className="md:text-xl">Image</th>
+                                <th className="md:text-xl">name</th>
+                                <th className="md:text-xl">Price</th>
+                                <th className="md:text-xl">Action</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -78,7 +78,7 @@ const Cart = () => {
                                     <td>
                                         <div className="flex items-center gap-3">
                                             <div className="avatar">
-                                                <div className="mask mask-squircle w-24 h-24">
+                                                <div className="mask mask-squircle md:w-24 md:h-24">
                                                     <img src={item.image} alt="Avatar Tailwind CSS Component" />
                                                 </div>
                                             </div>
@@ -86,12 +86,12 @@ const Cart = () => {
                                         </div>
                                     </td>
 
-                                    <td className="text-lg font-mono">
+                                    <td className="md:text-lg font-mono">
                                         {item.name}
                                     </td>
-                                    <td className="text-lg text-sky-500">{item.price}</td>
+                                    <td className="md:text-lg text-sky-500">{item.price}</td>
                                     <th>
-                                        <button onClick={() => handleDelete(item._id)} className="btn btn-ghost text-xl text-red-600 ">
+                                        <button onClick={() => handleDelete(item._id)} className="btn btn-ghost md:text-xl text-red-600 ">
                                             <FaTrash></FaTrash>
                                         </button>
                                     </th>
@@ -104,15 +104,17 @@ const Cart = () => {
                 </div>
             </div>
             {/* buy now */}
-            <div className="  flex bg-slate-100">
-                <div className=" flex-1 ">
-                    <input type="text" className="py-3 px-4  rounded-l-md rounded-r-none border border-sky-300 outline-none  w-2/3" placeholder="Coupon code" />
-                    <input type="submit" className="py-3 px-4 rounded-r-md rounded-l-none bg-sky-300 hover:bg-slate-200 duration-500" value="Apply coupon" />
+            <div className="  flex bg-slate-100 items-center justify-center md:px-5">
+                <div className=" flex-1  px-2 md:px-0 ">
+                    <input type="text" className="py-3 px-4  rounded-l-md rounded-r-none border border-sky-300 outline-none  md:w-1/2" placeholder="Coupon code" />
+                    <input type="submit" className="md:py-3 py-1 flex   px-2 md:px-4 rounded-r-md rounded-l-none bg-sky-300 hover:bg-slate-200 duration-500" value="Apply coupon" />
                 </div>
-                <div className="flex items-center justify-between flex-1">
-                    <h2 className="text-xl font-serif">Total Price: {totalPrice} </h2>
+
+                <div className="md:flex px-2 md:px-0 items-center justify-between flex-1">
+                    <h2 className="text-sm md:text-xl font-serif">Total Price: {totalPrice} </h2>
+
                     {cart.length ? <input type="submit" value="Buy Now" className="btn py-3 px-9 rounded-md hover:bg-slate-300  bg-sky-300 duration-500" /> :
-                        <input disabled type="submit" value="Buy Now" className="btn py-3 px-9 rounded-md hover:bg-slate-300  bg-sky-300 duration-500" />
+                        <input disabled type="submit" value="Buy Now" className="btn md:py-3  md:px-9 rounded-md hover:bg-slate-300  bg-sky-300 duration-500" />
                     }
                 </div>
             </div>

@@ -50,21 +50,23 @@ const PetListing = () => {
             <CoverImg image={petListingImg} text={'Pet Listing'}></CoverImg>
 
             {/* search field */}
-            <div className="px-5 my-10">
-                <div className="flex  justify-between items-center">
-                    <CoverText heading={'All pet listing here'} subHeading={'Listing pet'}></CoverText>
-                    <div>
+            <div className=" my-10">
+                <div className="flex  justify-between items-center px-3">
+                    <div className=''>
+                        <CoverText heading={'All pet listing here'} subHeading={'Listing pet'}></CoverText>
+                    </div>
+                    <div className=' ml-20'>
                         <form onSubmit={handleSubmit}>
-                            <input name="search" type="text" className="input input-bordered mb-2 md:mb-0" placeholder='Please Type your pet' />
+                            <input name="search" type="text" className="input input-bordered mb-2 md:mb-0 w-1/2 md:w-2/3" placeholder='Please Type your pet' />
                             <input type="submit" value="Search"
-                                className="py-3 px-3 rounded-lg bg-slate-400 border  text-white hover:bg-sky-400 duration-700 " />
+                                className=" py-3 px-3 rounded-lg bg-slate-400 border  text-white hover:bg-sky-400 duration-700 " />
                         </form>
                         {/* <SearchField setSearch={setSearch}></SearchField> */}
                     </div>
 
                 </div>
                 {/* all pets */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-5 px-5">
                     {
                         pets?.map(pet => <PetListingCatCart
                             key={pet._id}

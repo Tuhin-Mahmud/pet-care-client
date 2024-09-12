@@ -20,7 +20,7 @@ const Testimonials = () => {
 
 
     return (
-        <div className="my-10">
+        <div className="my-10 bg-gray-50 ">
             <SectionTitle subHeading={'Testimonials'} Heading={'what our customers says'} description={"Hi there! Were thrilled to hear that you are considering adopting a pet Here's a bit more about our adoption process and what you can expect when you visit us"}></SectionTitle>
 
             <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
@@ -29,7 +29,7 @@ const Testimonials = () => {
                     reviews.map(review => <SwiperSlide key={review._id}>
 
 
-                        <div className="md:px-48 px-16 flex flex-col items-center space-y-4">
+                        <div className="md:px-48 px-16 flex flex-col items-center space-y-4 py-3">
                             <h2 className=" text-3xl capitalize">Customer think about us</h2>
                             <Rating
                                 style={{ maxWidth: 180 }}

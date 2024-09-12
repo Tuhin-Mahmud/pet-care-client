@@ -7,7 +7,7 @@ const CampaignCart = ({ item }) => {
         <div className="">
             <div className="h-[500px] bg-base-100 shadow-xl rounded-lg ">
                 <div className="p-3 relative ">
-                    <figure><img className="h-[300px] rounded-lg object-cover" src={image} alt="Shoes" /></figure>
+                    <figure><img className=" md:h-[300px] rounded-lg object-cover" src={image} alt="Shoes" /></figure>
                     <p className="absolute top-5 px-3 text-white rounded bg-stone-700 right-5">age: {age}</p>
                 </div>
                 <div className="px-5 ">

@@ -26,7 +26,7 @@ const Contact = () => {
     return (
         <div className=''>
 
-            <CoverImg image={contactImg} text={'contact us page'}></CoverImg>
+            <CoverImg image={contactImg} text={'contact us'}></CoverImg>
             {/* contact us */}
             <div className='flex flex-col md:flex-row my-10'>
                 <div className='flex-1 w-full px-4 mb-8 md:mb-0'>

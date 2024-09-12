@@ -12,7 +12,7 @@ const AllPetDetails = () => {
         <div className=''>
             <div className=' mb-20'>
                 <img className='h-[450px] w-full object-cover rounded-xl ' src={details} alt="" />
-                <h2 className='-mt-36 ml-24 uppercase text-white text-5xl'> Pet Category Details </h2>
+                <h2 className='-mt-36 ml-24 uppercase text-white text-2xl md:text-5xl'> Pet Category Details </h2>
 
             </div>
             {/* details card */}

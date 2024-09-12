@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+// import { useEffect, useState } from 'react';
 import gallery from '../../assets/images/gallery/gallery.jpg'
 import useAxiosPublic from '../../hooks/useAxiosPublic';
 import GalleryCart from './GalleryCart';

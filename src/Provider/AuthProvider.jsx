@@ -63,7 +63,7 @@ const AuthProvider = ({ children }) => {
 
             setUser(currentUser)
             if (currentUser) {
-                const email = { email: currentUser.email }
+                const email = { email: currentUser?.email }
                 axiosPublic.post('/jwt', email)
                     .then(res => {
                         if (res.data.token) {

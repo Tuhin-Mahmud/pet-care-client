@@ -7,7 +7,7 @@ import { IoStarSharp } from 'react-icons/io5';
 const Offers = () => {
     return (
         <div>
-            <div className="hero  bg-base-100 my-5 px-3 md:px-0">
+            <div className="hero  bg-base-100 my-5 px-3  md:px-0">
                 <div className="hero-content flex-col lg:flex-row-reverse">
                     <div className='flex-1 border h-full '>
                         <img src={offer} className=" rounded-lg shadow-2xl" />
@@ -17,7 +17,7 @@ const Offers = () => {
                         <h1 className="text-3xl md:text-5xl font-bold font-mono">We Are Providing Pet Care Service For Years.</h1>
                         <p className="text-stone-400">  Pllentesque maximus augue orci, quis congue purus iaculisona ideno joku Maecenas eu lorem quisesdoi massal molestie jugnute vulputate in sitagajoi amet diam Cras eu odio sit amet.</p>
                         <div className='flex items-center justify-between '>
-                            <h3 className='md:text-xl italic '>we think working process my <span className='text-sky-500'>increase</span> mindset </h3>
+                            <h3 className='italic hidden md:block'>we think working process my <span className='text-sky-500'>increase</span> mindset </h3>
                             <button className="btn border px-4 py-4 border-sky-300 rounded-r-full rounded-l-full">Based on <span className='underline underline-offset-1'>20,921 reviews</span><br />
                                 <IoStarSharp className=' text-sky-400' />
                                 Trustpilot</button>
